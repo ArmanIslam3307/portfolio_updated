@@ -206,3 +206,16 @@ nav {
   color: #22d3ee;
 }
 
+/* Card hover */
+.card {
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  border-color: rgba(34, 211, 238, 0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.12);
+}
+
