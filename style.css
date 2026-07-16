@@ -125,6 +125,15 @@ nav {
   width: 100%;
 }
 
+/* Mobile menu */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.open {
+  display: flex;
+}
+
 /* Hero img */
 .hero-img-wrap {
   position: relative;
@@ -159,13 +168,22 @@ nav {
   border-radius: 50%;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg)
+  }
 
-
-/* Mobile menu */
-#mobile-menu {
-  display: none;
+  to {
+    transform: rotate(360deg)
+  }
 }
 
-#mobile-menu.open {
-  display: flex;
+/* Glow blob */
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
 }
+
