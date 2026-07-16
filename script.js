@@ -34,3 +34,13 @@ revEls.forEach(el=>obs.observe(el));
 
 // MOBILE MENU
 function toggleMenu(){const m=document.getElementById('mobile-menu');m.classList.toggle('open');}
+
+
+// SEND
+function handleSend(btn){
+  btn.textContent='✓ Sent!';
+  btn.style.background='rgba(34,211,238,0.1)';
+  btn.style.color='#22d3ee';
+  btn.style.border='1px solid #22d3ee';
+  setTimeout(()=>{btn.textContent='Send Message →';btn.style.background='linear-gradient(135deg,#6366f1,#22d3ee)';btn.style.color='#0a1628';btn.style.border='none';},3000);
+}

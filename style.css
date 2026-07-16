@@ -241,6 +241,33 @@ nav {
   margin-top: 4px;
 }
 
+/* Form inputs */
+input,
+textarea {
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  color: #e2e8f0;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  padding: 12px 14px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6366f1;
+}
+
+::placeholder {
+  color: #475569;
+}
+
+/* Clip-path button */
+.btn-clip {
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 100%+ 10px));
+}
+
 /* Section fade */
 section {
   position: relative;
