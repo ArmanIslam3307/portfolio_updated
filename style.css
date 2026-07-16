@@ -219,3 +219,16 @@ nav {
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.12);
 }
 
+
+/* Section fade */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+@media(max-width:768px) {
+  .hero-img-wrap {
+    width: 220px !important;
+    height: 220px !important;
+  }
+}
