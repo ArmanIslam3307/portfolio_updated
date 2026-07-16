@@ -218,7 +218,28 @@ nav {
   transform: translateY(-5px);
   box-shadow: 0 20px 60px rgba(99, 102, 241, 0.12);
 }
+/* Top bar animation */
+.top-bar {
+  height: 2px;
+  background: linear-gradient(90deg, #6366f1, #22d3ee);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
 
+.card:hover .top-bar {
+  transform: scaleX(1);
+}
+
+/* Timeline dot */
+.tl-dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #0a1628;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
 
 /* Section fade */
 section {
