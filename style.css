@@ -187,3 +187,22 @@ nav {
   pointer-events: none;
 }
 
+/* Skill tag */
+.skill-tag {
+  display: inline-block;
+  padding: 5px 12px;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  color: #a5b4fc;
+  font-size: 0.75rem;
+  margin: 3px;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background: rgba(34, 211, 238, 0.1);
+  border-color: #22d3ee;
+  color: #22d3ee;
+}
+
