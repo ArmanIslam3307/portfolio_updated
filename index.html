@@ -2,67 +2,120 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arman Islam | Web Developer & TVET Trainer</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arman Islam | Web Developer & TVET Trainer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
     <!-- NAVBAR -->
-  <nav
-    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 border-b border-indigo-500/10"
-    style="background:rgba(10,22,40,0.88);">
-    <a href="#hero" class="syne text-xl font-extrabold tracking-tight"
-      style="color:#22d3ee;text-decoration:none;">A<span style="color:#e2e8f0;">rman</span></a>
-    <!-- Desktop nav -->
-    <ul class="hidden md:flex gap-8 list-none m-0 p-0">
-      <li><a href="#about"
-          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
-          style="text-decoration:none;">About</a></li>
-      <li><a href="#skills"
-          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
-          style="text-decoration:none;">Skills</a></li>
-      <li><a href="#projects"
-          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
-          style="text-decoration:none;">Projects</a></li>
-      <li><a href="#education"
-          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
-          style="text-decoration:none;">Education</a></li>
-      <li><a href="#contact"
-          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
-          style="text-decoration:none;">Contact</a></li>
-    </ul>
-    <!-- Mobile hamburger -->
-    <button onclick="toggleMenu()" class="md:hidden text-slate-400 hover:text-cyan-400"
-      style="background:none;border:none;cursor:none;font-size:1.4rem;">☰</button>
-  </nav>
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="fixed top-[65px] left-0 right-0 z-40 flex-col gap-0 border-b border-indigo-500/10"
-    style="background:rgba(10,22,40,0.97);">
-    <a href="#about" onclick="toggleMenu()" class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
-      style="text-decoration:none;">About</a>
-    <a href="#skills" onclick="toggleMenu()"
-      class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
-      style="text-decoration:none;">Skills</a>
-    <a href="#projects" onclick="toggleMenu()"
-      class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
-      style="text-decoration:none;">Projects</a>
-    <a href="#education" onclick="toggleMenu()"
-      class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
-      style="text-decoration:none;">Education</a>
-    <a href="#contact" onclick="toggleMenu()" class="block px-6 py-3 text-sm text-slate-400"
-      style="text-decoration:none;">Contact</a>
-  </div>
+    <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 border-b border-indigo-500/10"
+        style="background:rgba(10,22,40,0.88);">
+        <a href="#hero" class="syne text-xl font-extrabold tracking-tight"
+            style="color:#22d3ee;text-decoration:none;">A<span style="color:#e2e8f0;">rman</span></a>
+        <!-- Desktop nav -->
+        <ul class="hidden md:flex gap-8 list-none m-0 p-0">
+            <li><a href="#about"
+                    class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+                    style="text-decoration:none;">About</a></li>
+            <li><a href="#skills"
+                    class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+                    style="text-decoration:none;">Skills</a></li>
+            <li><a href="#projects"
+                    class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+                    style="text-decoration:none;">Projects</a></li>
+            <li><a href="#education"
+                    class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+                    style="text-decoration:none;">Education</a></li>
+            <li><a href="#contact"
+                    class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+                    style="text-decoration:none;">Contact</a></li>
+        </ul>
+        <!-- Mobile hamburger -->
+        <button onclick="toggleMenu()" class="md:hidden text-slate-400 hover:text-cyan-400"
+            style="background:none;border:none;cursor:none;font-size:1.4rem;">☰</button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="fixed top-[65px] left-0 right-0 z-40 flex-col gap-0 border-b border-indigo-500/10"
+        style="background:rgba(10,22,40,0.97);">
+        <a href="#about" onclick="toggleMenu()"
+            class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+            style="text-decoration:none;">About</a>
+        <a href="#skills" onclick="toggleMenu()"
+            class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+            style="text-decoration:none;">Skills</a>
+        <a href="#projects" onclick="toggleMenu()"
+            class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+            style="text-decoration:none;">Projects</a>
+        <a href="#education" onclick="toggleMenu()"
+            class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+            style="text-decoration:none;">Education</a>
+        <a href="#contact" onclick="toggleMenu()" class="block px-6 py-3 text-sm text-slate-400"
+            style="text-decoration:none;">Contact</a>
+    </div>
+
+    <!-- HERO -->
+  <section id="hero" class="relative min-h-screen flex items-center px-6 md:px-16 pt-24 pb-16 max-w-6xl mx-auto">
+    <!-- blobs -->
+    <div class="blob"
+      style="width:400px;height:400px;background:radial-gradient(circle,#6366f1 0%,transparent 70%);top:-80px;right:-60px;">
+    </div>
+    <div class="blob"
+      style="width:300px;height:300px;background:radial-gradient(circle,#22d3ee 0%,transparent 70%);bottom:10%;left:-80px;">
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center gap-12 md:gap-20 w-full">
+      <!-- Text -->
+      <div class="flex-1 order-2 md:order-1" style="animation:fadeUp 0.7s 0.1s both;">
+        <p class="text-xs tracking-[4px] uppercase mb-5 flex items-center gap-3"
+          style="color:#22d3ee;font-family:'Inter',sans-serif;">
+          <span style="display:inline-block;width:40px;height:1px;background:#22d3ee;"></span>
+          Open to Opportunities
+        </p>
+        <h1 class="syne font-extrabold leading-none tracking-tight mb-5"
+          style="font-size:clamp(3rem,8vw,6rem);color:#f1f5f9;">
+          Arman<br>
+          <span style="-webkit-text-stroke:2px #6366f1;color:transparent;">Islam</span>
+        </h1>
+        <p id="typewriter-wrap" class="text-lg mb-8" style="color:#94a3b8;min-height:28px;">
+          <span id="typed" style="color:#22d3ee;font-weight:500;"></span><span id="cursor-blink"
+            style="color:#22d3ee;animation:blink 1s step-end infinite;">|</span>
+        </p>
+        <p class="text-base leading-relaxed mb-10 max-w-lg" style="color:#94a3b8;">
+          Web Developer &amp; TVET Trainer from Bangladesh. Building scalable Django apps and training the next
+          generation of developers.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects"
+            class="btn-clip inline-block px-7 py-3 text-sm font-semibold tracking-wide hover:-translate-y-1 transition-transform"
+            style="background:linear-gradient(135deg,#6366f1,#22d3ee);color:#0a1628;text-decoration:none;">View
+            Projects</a>
+          <a href="#contact"
+            class="btn-clip inline-block px-7 py-3 text-sm font-semibold tracking-wide hover:-translate-y-1 transition-transform"
+            style="border:1px solid #6366f1;color:#a5b4fc;text-decoration:none;">Contact Me</a>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="order-1 md:order-2 flex-shrink-0" style="animation:fadeUp 0.7s 0.3s both;">
+        <div class="hero-img-wrap w-[580px] h-[580px] md:w-[420px] md:h-[420px] rounded-full">
+          <img src="./img/hero_img.jpg" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-<script src="./script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
