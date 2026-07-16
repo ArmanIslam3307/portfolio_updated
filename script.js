@@ -9,6 +9,18 @@ document.querySelectorAll('a,button,.skill-tag,.card').forEach(el=>{
   el.addEventListener('mouseleave',()=>{ring.style.width='36px';ring.style.height='36px';ring.style.opacity='0.5';});
 });
 
+// TYPEWRITER
+const words=['Web Developer','Frontend Developer','TVET Trainer','Django Developer'];
+let wi=0,ci=0,del=false;
+const typed=document.getElementById('typed');
+function typeLoop(){
+  const w=words[wi];
+  if(!del){typed.textContent=w.slice(0,ci+1);ci++;if(ci===w.length){del=true;setTimeout(typeLoop,1600);return;}}
+  else{typed.textContent=w.slice(0,ci-1);ci--;if(ci===0){del=false;wi=(wi+1)%words.length;}}
+  setTimeout(typeLoop,del?50:90);
+}
+typeLoop();
+
 
 // NAV SHRINK
 const navbar=document.querySelector('nav');
