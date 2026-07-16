@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arman Islam | Web Developer & TVET Trainer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+  <nav
+    class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 border-b border-indigo-500/10"
+    style="background:rgba(10,22,40,0.88);">
+    <a href="#hero" class="syne text-xl font-extrabold tracking-tight"
+      style="color:#22d3ee;text-decoration:none;">A<span style="color:#e2e8f0;">rman</span></a>
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex gap-8 list-none m-0 p-0">
+      <li><a href="#about"
+          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+          style="text-decoration:none;">About</a></li>
+      <li><a href="#skills"
+          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+          style="text-decoration:none;">Skills</a></li>
+      <li><a href="#projects"
+          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+          style="text-decoration:none;">Projects</a></li>
+      <li><a href="#education"
+          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+          style="text-decoration:none;">Education</a></li>
+      <li><a href="#contact"
+          class="nav-link text-xs tracking-widest uppercase text-slate-400 hover:text-cyan-400 transition-colors"
+          style="text-decoration:none;">Contact</a></li>
+    </ul>
+    <!-- Mobile hamburger -->
+    <button onclick="toggleMenu()" class="md:hidden text-slate-400 hover:text-cyan-400"
+      style="background:none;border:none;cursor:none;font-size:1.4rem;">☰</button>
+  </nav>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="fixed top-[65px] left-0 right-0 z-40 flex-col gap-0 border-b border-indigo-500/10"
+    style="background:rgba(10,22,40,0.97);">
+    <a href="#about" onclick="toggleMenu()" class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+      style="text-decoration:none;">About</a>
+    <a href="#skills" onclick="toggleMenu()"
+      class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+      style="text-decoration:none;">Skills</a>
+    <a href="#projects" onclick="toggleMenu()"
+      class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+      style="text-decoration:none;">Projects</a>
+    <a href="#education" onclick="toggleMenu()"
+      class="block px-6 py-3 text-sm text-slate-400 border-b border-indigo-500/10"
+      style="text-decoration:none;">Education</a>
+    <a href="#contact" onclick="toggleMenu()" class="block px-6 py-3 text-sm text-slate-400"
+      style="text-decoration:none;">Contact</a>
+  </div>
+
+
+
+<script src="./script.js"></script>
+</body>
+
+</html>

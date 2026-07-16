@@ -1,0 +1,46 @@
+:root {
+  --navy: #0a1628;
+  --accent: #22d3ee;
+  --indigo: #6366f1;
+}
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a1628;
+  color: #e2e8f0;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+
+
+
+/* Nav */
+nav {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #22d3ee;
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
